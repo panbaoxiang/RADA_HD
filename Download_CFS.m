@@ -24,4 +24,4 @@ script=Flatten[Table[DateString[time[[t]],
 {"wget -nc https://www.ncei.noaa.gov/data/climate-forecast-system/access/reforecast/high-prioroty-subset/time-series-9-month/",
 "Year","/","Year","Month","/",var[[k]]<>".","Year","Month","Day","Hour",".time.grb2"}],{t,Length[time]},{k,Length[var]-2}]];
 
-Export["/Users/pan11/Documents/SADAN/download.sh",script,"Table"]
+Export["/Users/pan11/Documents/SADAN/forecast_historical_prognostic.sh",script,"Table"]
